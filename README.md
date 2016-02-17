@@ -10,8 +10,8 @@ Stay informed about all upcoming SpaceX launches. Sign up for the public SpaceX-
 
 ## Credits
 
-This website is based on a template created by David Miller.
+This website is based on a [template created by David Miller](https://github.com/BlackrockDigital/startbootstrap-grayscale).
 
 ## Copyright and License
 
-Copyright 2016 Maurice Wipf. Code released under the [Apache 2.0](https://github.com/mauriceipf/spacex-launches/LICENSE) license.
+Copyright 2016 Maurice Wipf. Code released under the [Apache 2.0](https://github.com/mauricewipf/spacex-launches/LICENSE) license.
