@@ -1,9 +1,9 @@
-# SpaceX-Launches.ical
+# SpaceX-Launches
 
 ## About
 
 All SpaceX Launches in Your Calendar.
-Stay informed about all upcoming SpaceX launches. Sign up for the public SpaceX-Launches.ical
+Stay informed about all upcoming SpaceX launches. Sign up for the public SpaceX-Launches.ics
 
 ## Images
 - https://www.flickr.com/photos/spacexphotos
