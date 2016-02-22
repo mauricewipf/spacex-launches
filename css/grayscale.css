@@ -157,11 +157,13 @@ a:focus {
     display: table-cell;
     vertical-align: middle;
 }
-
 .intro .intro-body .brand-heading {
     font-size: 25px;
 }
-
+.intro .intro-body .brand-subheading {
+  font-size: 25px;
+  padding-top: 20px;
+}
 .intro .intro-body .intro-text {
     font-size: 18px;
 }
@@ -171,11 +173,13 @@ a:focus {
         height: 100%;
         padding: 0;
     }
-
     .intro .intro-body .brand-heading {
         font-size: 50px;
     }
-
+    .intro .intro-body .brand-subheading {
+      font-size: 50px;
+      padding-top: 20px;
+    }
     .intro .intro-body .intro-text {
         font-size: 26px;
     }
@@ -403,4 +407,19 @@ body {
 *:-ms-input-placeholder {
     /* IE 10+ */
     color: rgba(66, 220, 163, 0.6);
+}
+
+.google-calendar {
+  display: inline-flex;
+  align-items: top;
+}
+#google-calendar-link {
+  border: 1px solid #42dca3;
+  color: #42dca3;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 12px;
+  margin-bottom: 0;
+  margin-right: 15px;
+  width: 100%;
 }

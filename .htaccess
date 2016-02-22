@@ -2,10 +2,12 @@
 # Hyperlinks without .html (Links in file must be without .html)
 # ----------------------------------------------------------------------
 
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^([^\.]+)$ $1.html [NC,L]
+</IfModule>
 
 # ----------------------------------------------------------------------
 # Forcing `https://`
@@ -28,7 +30,7 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
     RewriteEngine On
     RewriteCond %{HTTPS} !=on
     RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-    RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+    RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 </IfModule>
 
 # ----------------------------------------------------------------------
@@ -38,9 +40,11 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
 ErrorDocument 404 /404.html
 ErrorDocument 500 /500.html
 
-RewriteEngine On
-RewriteBase /
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
 
-RewriteCond %{REQUEST_URI} ^/404/$ [OR]
-RewriteCond %{REQUEST_URI} ^/500/$
-RewriteRule ^(.*)$ /404.html [L]
+  RewriteCond %{REQUEST_URI} ^/404/$ [OR]
+  RewriteCond %{REQUEST_URI} ^/500/$
+  RewriteRule ^(.*)$ /404.html [L]
+</IfModule>
