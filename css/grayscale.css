@@ -266,7 +266,7 @@ a:focus {
 .download-section {
     width: 100%;
     padding: 50px 0;
-    color: #42dca3;
+    color: #000;
     background: url(../img/spacex02.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
@@ -274,6 +274,17 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
 }
+.download-section .btn-default {
+  border: 1px solid #000;
+  color: #000;
+}
+.download-section .btn-default:hover, .download-section .btn-default:focus {
+    border: 1px solid #000;
+    outline: 0;
+    color: #000;
+    background-color: #42dca3;
+}
+
 
 @media(min-width:767px) {
     .content-section {
@@ -372,18 +383,16 @@ body {
     #mc_embed_signup_scroll {
         display: block;
     }
-    #mc_embed_signup #mce-EMAIL {
-      width: 100%;
-    }
 }
 #mc_embed_signup #mce-EMAIL {
-  border: 1px solid #42dca3;
-  color: #42dca3;
+  border: 1px solid #000;
+  color: #000;
   background-color: transparent;
   border-radius: 0;
   padding: 12px;
   margin-bottom: 15px;
   margin-right: 15px;
+  width: 320px;
 }
 #mc_embed_signup #mce-EMAIL:hover,
 #mc_embed_signup #mce-EMAIL:focus {
@@ -394,19 +403,19 @@ body {
 }
 /* do not group these rules */
 *::-webkit-input-placeholder {
-  color: rgba(66, 220, 163, 0.6);
+  color: rgba(0, 0, 0, 0.4);
 }
 *:-moz-placeholder {
     /* FF 4-18 */
-    color: rgba(66, 220, 163, 0.6);
+    color: rgba(0, 0, 0, 0.4);
 }
 *::-moz-placeholder {
     /* FF 19+ */
-    color: rgba(66, 220, 163, 0.6);
+    color: rgba(0, 0, 0, 0.4);
 }
 *:-ms-input-placeholder {
     /* IE 10+ */
-    color: rgba(66, 220, 163, 0.6);
+    color: rgba(0, 0, 0, 0.4);
 }
 
 .google-calendar {
